@@ -13,8 +13,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            background-image: url(assets/img/wallpaper.png);
+            
         }
 
         .grid-container {
@@ -164,10 +165,48 @@
 
 
         .small-text {
-            justify-content: center;
-            font-size: 0.9em;
+            font-size: 1em;
             color: #555;
+            padding: 20px;
+            text-align: center;
+            position: relative;
         }
+
+        .small-text::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px dashed #bbb;
+            border-radius: 10px;
+            animation: dash-animation 2s infinite linear;
+            z-index: -1; /* Posiziona il bordo dietro il testo */
+        }
+
+        @keyframes dash-animation {
+            0% {
+                border-color: #bbb;
+                transform: translate(0, 0);
+            }
+            50% {
+                border-color: #999;
+                transform: translate(-5px, -5px);
+            }
+            100% {
+                border-color: #bbb;
+                transform: translate(0, 0);
+            }
+        }
+
+        .small-text a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+            
     </style>
 </head>
 
@@ -218,15 +257,16 @@
         <div class="grid-item"><img src="assets/img/goku.png" alt="Foto 1"></div>
         <div class="grid-item"><img src="assets/img/paolo1.png" alt="Foto 2"></div>
         <div class="grid-item"><img src="assets/img/paolo2.png" alt="Foto 3"></div>
-        <div class="grid-item"><img src="assets/img/paolo3.jpeg" alt="Foto 4"></div>
+        <div class="grid-item"><img src="assets/img/owen.png" alt="Foto 4"></div>
         <div class="grid-item"><img src="assets/img/paolo4.png" alt="Foto 5"></div>
         <div class="grid-item"><img src="assets/img/paolo5.png" alt="Foto 6"></div>
         <div class="grid-item"><img src="assets/img/paolo 8.png" alt="Foto 7"></div>
         <div class="grid-item"><img src="assets/img/paolo 10.jpg" alt="Foto 8"></div>
-        <div class="grid-item"><img src="foto9.jpg" alt="Foto 9"></div>
+        <div class="grid-item"><img src="assets/img/paolo 7.png" alt="Foto 9"></div>
+        <div class="grid-item"><img src="assets/img/lebron.jpg" alt="Foto 10"></div>
     </div>
 
-    <h1>Le mie passioni</h1>
+    <h1>I miei punti di forza</h1>
     <div class="video-container">
         <!-- Sostituisci il link con l'ID del tuo video -->
         <iframe src="https://youtu.be/JwIDTvEKM7g?si=y-8u19Q3Pm923rRI" title="Video di YouTube"
@@ -244,7 +284,7 @@
     <div class="small-text">
         Candidati per raggiungere il paradiso <a href="https://docs.google.com/forms/d/e/1FAIpQLScMsKdnwW6y5v1l6tjHAmHqsYGXM2sZ2vVUm3z7hcf5V5UkBQ/viewform?usp=dialog" target="_blank">qui</a>.
     </div>
-
+        
 </body>
 
 </html>
