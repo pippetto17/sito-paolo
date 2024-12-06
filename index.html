@@ -1,216 +1,18 @@
 <!DOCTYPE html>
 <html lang="it">
+<link rel="stylesheet" href="style.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paolo Best Cock</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, sans-serif;
-            background-image: url(assets/img/wallpaper.png);
-            
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* 3 colonne di larghezza uguale */
-            gap: 15px;
-            /* Spazio tra le immagini */
-            max-width: 800px;
-            margin: 0 auto;
-            /* Centra la griglia nella pagina */
-        }
-
-        .grid-item {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .grid-item img {
-            width: 100%;
-            /* L'immagine occupa tutta la larghezza del contenitore */
-            height: auto;
-            /* Mantiene il rapporto d'aspetto */
-        }
-
-        .image-container {
-            width: 90%;
-            /* Le immagini occuperanno il 90% della larghezza della finestra */
-            max-width: 800px;
-            /* Limite massimo per le immagini */
-            margin: 20px 0;
-        }
-
-        .image-container img {
-            width: 100%;
-            /* Le immagini si adatteranno alla larghezza del contenitore */
-            height: auto;
-            /* Mantiene il rapporto d'aspetto */
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .autobiography-section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            line-height: 1.8;
-        }
-
-        .autobiography-section h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #007bff;
-            text-align: center;
-        }
-
-        .autobiography-section p {
-            font-size: 1em;
-            font-family: 'Lora', serif;
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-
-        .autobiography-section .highlight {
-            font-weight: bold;
-            color: #007bff;
-        }
-
-        .autobiography-section .quote {
-            font-style: italic;
-            text-align: center;
-            color: #555;
-            margin: 20px 0;
-            border-left: 4px solid #007bff;
-            padding-left: 10px;
-        }
-
-        .autobiography-image {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .autobiography-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .season-section {
-            margin-bottom: 30px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .season-title {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .episode-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .episode-list li {
-            margin: 5px 0;
-        }
-
-        .episode-list li a {
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        .episode-list li a:hover {
-            text-decoration: underline;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* Proporzioni 16:9 */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-
-        .small-text {
-            font-size: 1em;
-            color: #555;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .small-text::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border: 2px dashed #bbb;
-            border-radius: 10px;
-            animation: dash-animation 2s infinite linear;
-            z-index: -1; /* Posiziona il bordo dietro il testo */
-        }
-
-        @keyframes dash-animation {
-            0% {
-                border-color: #bbb;
-                transform: translate(0, 0);
-            }
-            50% {
-                border-color: #999;
-                transform: translate(-5px, -5px);
-            }
-            100% {
-                border-color: #bbb;
-                transform: translate(0, 0);
-            }
-        }
-
-        .small-text a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-
-            
-    </style>
 </head>
 
 <body>
+    <div><audio src="assets/mp3/hotline.mp3" autoplay loop>
+            Il tuo browser non supporta l'elemento audio.
+        </audio></div>
+
     <div class="image-container">
         <img src="assets/img/CV1.png" alt="CV pagina 1">
     </div>
@@ -221,7 +23,7 @@
     <section class="autobiography-section">
         <h1>Autobiografia</h1>
         <div class="autobiography-image">
-            <img src="assets/img/paolo.jpg" alt="Immagine di Paolo">
+            <img src="assets/img/paolo11.png" alt="Immagine di Paolo">
         </div>
         <p>
             Ehm… allora, sì, dicevo. Mi chiamo Paolo, ho 22 anni e vivo in Italia. Ma non sono un tipo normale, ehm…
@@ -266,25 +68,101 @@
         <div class="grid-item"><img src="assets/img/lebron.jpg" alt="Foto 10"></div>
     </div>
 
-    <h1>I miei punti di forza</h1>
-    <div class="video-container">
-        <!-- Sostituisci il link con l'ID del tuo video -->
-        <iframe src="https://youtu.be/JwIDTvEKM7g?si=y-8u19Q3Pm923rRI" title="Video di YouTube"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+    <div class="strengths-section">
+        <h2>I Miei Punti di Forza</h2>
+        <p>Creatività, determinazione e capacità di risolvere i problemi con eleganza e precisione.</p>
+        <img src="assets/img/paolo12.jpg" alt="Immagine rappresentativa">
+
     </div>
-
-
-
-    <div><audio src="assets/mp3/hotline.mp3" autoplay loop>
-            Il tuo browser non supporta l'elemento audio.
-    </audio></div>
 
     <div class="small-text">
-        Candidati per raggiungere il paradiso <a href="https://docs.google.com/forms/d/e/1FAIpQLScMsKdnwW6y5v1l6tjHAmHqsYGXM2sZ2vVUm3z7hcf5V5UkBQ/viewform?usp=dialog" target="_blank">qui</a>.
+        Candidati per raggiungere il paradiso <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScMsKdnwW6y5v1l6tjHAmHqsYGXM2sZ2vVUm3z7hcf5V5UkBQ/viewform?usp=dialog"
+            target="_blank">qui</a>.
     </div>
-        
+
+    <h1>I miei interessi</h1>
+    <div class="grid-container">
+        <!-- Video 1 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/HiLy0ppgqpU?si=jI1ib3pLMUq9jBjr" title="Video 1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/Un-opjPr9LU?si=Qpu8RaVOjRLMQbEv" title="Video 2" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/FzrywTsSk9U?si=sksunzEia7p87dhU" title="Video 3" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/kdMt6pPOh_M?si=hp4EF5_s9A4Wz7sw" title="Video 4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/EXy83qr9jrI?si=aITmwJCTOXG4Li6C" title="Video 5" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/ovOnqaat_Ag?si=KtvFrWBJ13msdzIL" title="Video 6" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 7 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/MczI8vZHamc?si=3BPFtaFPXeH0sJi1" title="Video 4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/bs-48_0uwv4?si=KxSQiYazLpX4hjos" title="Video 5" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Video 9 -->
+        <div class="grid-item">
+            <iframe src="https://www.youtube.com/embed/Pah2arSLVlg?si=GGpLlIpEvrbS3lFM" title="Video 6" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    </div>
+    <h1>Un piccolo omaggio dai programmatori</h1>
+    <video controls>
+        <source src="assets/video/happy-birthday.mp4" type="video/mp4">
+        Il tuo browser non supporta il formato video.
+    </video>
+
 </body>
 
 </html>
