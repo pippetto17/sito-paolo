@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,41 +19,151 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 colonne di larghezza uguale */
-            gap: 15px; /* Spazio tra le immagini */
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 colonne di larghezza uguale */
+            gap: 15px;
+            /* Spazio tra le immagini */
             max-width: 800px;
-            margin: 0 auto; /* Centra la griglia nella pagina */
+            margin: 0 auto;
+            /* Centra la griglia nella pagina */
         }
 
         .grid-item {
-            background-color: #fff;
-            border: 1px solid #ccc;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .grid-item img {
-            width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
-            height: auto; /* Mantiene il rapporto d'aspetto */
+            width: 100%;
+            /* L'immagine occupa tutta la larghezza del contenitore */
+            height: auto;
+            /* Mantiene il rapporto d'aspetto */
         }
 
         .image-container {
-            width: 90%; /* Le immagini occuperanno il 90% della larghezza della finestra */
-            max-width: 800px; /* Limite massimo per le immagini */
+            width: 90%;
+            /* Le immagini occuperanno il 90% della larghezza della finestra */
+            max-width: 800px;
+            /* Limite massimo per le immagini */
             margin: 20px 0;
         }
 
         .image-container img {
-            width: 100%; /* Le immagini si adatteranno alla larghezza del contenitore */
-            height: auto; /* Mantiene il rapporto d'aspetto */
-            border: 1px solid #ccc;
+            width: 100%;
+            /* Le immagini si adatteranno alla larghezza del contenitore */
+            height: auto;
+            /* Mantiene il rapporto d'aspetto */
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        .autobiography-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .autobiography-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .autobiography-section p {
+            font-size: 1em;
+            font-family: 'Lora', serif;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .autobiography-section .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .autobiography-section .quote {
+            font-style: italic;
+            text-align: center;
+            color: #555;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+
+        .autobiography-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .autobiography-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .season-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .season-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .episode-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .episode-list li {
+            margin: 5px 0;
+        }
+
+        .episode-list li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .episode-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* Proporzioni 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
+
 <body>
     <div class="image-container">
         <img src="assets/img/CV1.png" alt="CV pagina 1">
@@ -61,21 +172,67 @@
         <img src="assets/img/CV2.png" alt="CV pagina 2">
     </div>
 
+    <section class="autobiography-section">
+        <h1>Autobiografia</h1>
+        <div class="autobiography-image">
+            <img src="assets/img/paolo.jpg" alt="Immagine di Paolo">
+        </div>
+        <p>
+            Ehm… allora, sì, dicevo. Mi chiamo Paolo, ho 22 anni e vivo in Italia. Ma non sono un tipo normale, ehm…
+            cioè, capiamoci, normale sì, però… insomma, Madre Natura ha deciso di… ehm… come dire, farmi un dono un po’
+            fuori misura. Sì, sto parlando di quello. Del mio pene. Jeg mener… det er enormt, nesten for stort. Det er
+            som en gave og en forbannelse samtidig.
+
+            Eh, scusa, dicevo… Sì, è… mastodontico. Non trovo altre parole. È una cosa che, insomma, fin da quando ero
+            un ragazzino ha sempre attirato l’attenzione. Cioè, nei camerini di calcio a scuola tutti erano tipo: “Ma
+            che… Paolo, ma sei serio?!” E io lì a fare il vago, come se fosse normale. Ma normale non è, e lo so.
+
+            Noen ganger føler jeg at det er for mye ansvar. Perché, sì, sembra tutto bello, no? Uno pensa: “Wow, chissà
+            quante ragazze staranno ai tuoi piedi!” Ehm… sì e no. Perché… ehm, come dire, non tutte sono pronte,
+            capisci? Cioè, non è che puoi arrivare e dire: “Ehi, sorpresa!” Devi spiegare, preparare, avere pazienza. È
+            un lavoro, praticamente.
+
+            Og du vet, i sengen… det er ikke alltid lett. Noen ganger føler jeg at jeg må være mer forsiktig enn en
+            kirurg! Eh, scusa, dicevo… sì, è complicato. Però, ecco, non è che mi lamento, eh. Cioè, è una parte di me,
+            e alla fine mi ha anche insegnato tanto. Tipo, a essere più rispettoso, più consapevole degli altri. Ehm,
+            sì, forse è una cosa positiva.
+
+            Ma poi, vabbè, ci sono anche momenti divertenti. Tipo una volta in spiaggia, avevo questi pantaloncini un
+            po’ stretti e… ehm, sì, diciamo che attiravo più attenzione io del gelato al limone del chiosco. Alle
+            begynte å stirre, og jeg visste ikke hva jeg skulle gjøre!
+
+            Quindi, sì, vivere con un pene mastodontico è una cosa… ehm, singolare. Non è che lo raccomanderei, ma se ti
+            capita, alla fine… du må bare akseptere det, ikke sant?
+        </p>
+    </section>
+    <h1>Alcune mie foto</h1>
     <div class="grid-container">
         <!-- Sostituisci con i tuoi file immagine -->
-        <div class="grid-item"><img src="foto1.jpg" alt="Foto 1"></div>
-        <div class="grid-item"><img src="foto2.jpg" alt="Foto 2"></div>
-        <div class="grid-item"><img src="foto3.jpg" alt="Foto 3"></div>
-        <div class="grid-item"><img src="foto4.jpg" alt="Foto 4"></div>
-        <div class="grid-item"><img src="foto5.jpg" alt="Foto 5"></div>
-        <div class="grid-item"><img src="foto6.jpg" alt="Foto 6"></div>
-        <div class="grid-item"><img src="foto7.jpg" alt="Foto 7"></div>
-        <div class="grid-item"><img src="foto8.jpg" alt="Foto 8"></div>
+        <div class="grid-item"><img src="assets/img/goku.png" alt="Foto 1"></div>
+        <div class="grid-item"><img src="assets/img/paolo1.png" alt="Foto 2"></div>
+        <div class="grid-item"><img src="assets/img/paolo2.png" alt="Foto 3"></div>
+        <div class="grid-item"><img src="assets/img/paolo3.jpeg" alt="Foto 4"></div>
+        <div class="grid-item"><img src="assets/img/paolo4.png" alt="Foto 5"></div>
+        <div class="grid-item"><img src="assets/img/paolo5.png" alt="Foto 6"></div>
+        <div class="grid-item"><img src="assets/img/paolo 8.png" alt="Foto 7"></div>
+        <div class="grid-item"><img src="assets/img/paolo 10.jpg" alt="Foto 8"></div>
         <div class="grid-item"><img src="foto9.jpg" alt="Foto 9"></div>
     </div>
-    
+
+    <h1>Le mie passioni</h1>
+    <div class="video-container">
+        <!-- Sostituisci il link con l'ID del tuo video -->
+        <iframe src="https://youtu.be/JwIDTvEKM7g?si=y-8u19Q3Pm923rRI" title="Video di YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+
+
     <div><audio src="assets/mp3/hotline.mp3" autoplay loop>
-        Il tuo browser non supporta l'elemento audio.
-    </audio></div>   
+            Il tuo browser non supporta l'elemento audio.
+        </audio></div>
 </body>
+
 </html>
