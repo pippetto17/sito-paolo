@@ -16,6 +16,27 @@
             font-family: Arial, sans-serif;
         }
 
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colonne di larghezza uguale */
+            gap: 15px; /* Spazio tra le immagini */
+            max-width: 800px;
+            margin: 0 auto; /* Centra la griglia nella pagina */
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+            height: auto; /* Mantiene il rapporto d'aspetto */
+        }
+
         .image-container {
             width: 90%; /* Le immagini occuperanno il 90% della larghezza della finestra */
             max-width: 800px; /* Limite massimo per le immagini */
@@ -29,6 +50,7 @@
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
     </style>
 </head>
 <body>
@@ -38,6 +60,20 @@
     <div class="image-container">
         <img src="assets/img/CV2.png" alt="CV pagina 2">
     </div>
+
+    <div class="grid-container">
+        <!-- Sostituisci con i tuoi file immagine -->
+        <div class="grid-item"><img src="foto1.jpg" alt="Foto 1"></div>
+        <div class="grid-item"><img src="foto2.jpg" alt="Foto 2"></div>
+        <div class="grid-item"><img src="foto3.jpg" alt="Foto 3"></div>
+        <div class="grid-item"><img src="foto4.jpg" alt="Foto 4"></div>
+        <div class="grid-item"><img src="foto5.jpg" alt="Foto 5"></div>
+        <div class="grid-item"><img src="foto6.jpg" alt="Foto 6"></div>
+        <div class="grid-item"><img src="foto7.jpg" alt="Foto 7"></div>
+        <div class="grid-item"><img src="foto8.jpg" alt="Foto 8"></div>
+        <div class="grid-item"><img src="foto9.jpg" alt="Foto 9"></div>
+    </div>
+    
     <div><audio src="assets/mp3/hotline.mp3" autoplay loop>
         Il tuo browser non supporta l'elemento audio.
     </audio></div>   
